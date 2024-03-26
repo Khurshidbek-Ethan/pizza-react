@@ -7,6 +7,7 @@ import reportWebVitals from './reportWebVitals';
 import CssBaseline from '@mui/material/CssBaseline';
 import { ThemeProvider } from '@mui/material/styles';
 import theme from './app/materialTheme/MaterialTheme';
+import {BrowserRouter as Router,} from "react-router-dom";
 import './css/index.css';
 
 
@@ -18,9 +19,9 @@ ReactDOM.render(
     <Provider store={store}>
       <ThemeProvider theme = {theme}>
         <CssBaseline/>
-        {/* pern component  */}
-        <App />
-        {/* child component  */}
+        <Router>
+           <App />
+        </Router>
         </ThemeProvider>
 
     </Provider>
