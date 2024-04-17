@@ -9,6 +9,7 @@ export default function HomeNavbar () {
     const [count, setCount] = useState<number>(0);
     const [value, setvalue] = useState<boolean>(true);
 
+   
       
     useEffect(() => {
     console.log("componentDidMount", count);
@@ -17,7 +18,7 @@ export default function HomeNavbar () {
 
       return () => 
       {
-       console.log("componentWillUnmount");
+       console.log("componentWillUnmount",count);
       }
     },[value]);
     
