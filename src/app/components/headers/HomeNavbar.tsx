@@ -9,7 +9,7 @@ export default function HomeNavbar () {
     const [count, setCount] = useState<number>(0);
     const [value, setvalue] = useState<boolean>(true);
 
-   
+ 
       
     useEffect(() => {
     console.log("componentDidMount", count);
@@ -24,7 +24,7 @@ export default function HomeNavbar () {
     
     /** HANDLERS  **/
     const buttonHandler = () => {
-     setvalue(!value);
+     setvalue(!value);// true= false / false = true 
     }
 
     return <div className = "home-navbar">
