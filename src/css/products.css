@@ -559,14 +559,10 @@
   display: flex;
   flex-direction: row;
   justify-content: end;
-  transform: rotate(-90deg);
-  /* Standard CSS property */
-  -moz-transform: rotate(-90deg);
-  /* Firefox */
-  -ms-transform: rotate(-90deg);
-  /* Edge */
-  -o-transform: rotate(-90deg);
-  /* Opera */
+  transform: rotate(-90deg); /* Standard CSS property */
+  -moz-transform: rotate(-90deg); /* Firefox */
+  -ms-transform: rotate(-90deg); /* Edge */
+  -o-transform: rotate(-90deg); /* Opera */
   -webkit-transform: rotate(-90deg);
 }
 

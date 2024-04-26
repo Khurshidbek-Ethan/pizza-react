@@ -1,31 +1,31 @@
-import React from "react";
-import { Box, Container, Stack } from "@mui/material";
+import { Container, Stack, Box } from "@mui/material";
 import Card from "@mui/joy/Card";
 import { CssVarsProvider, Typography } from "@mui/joy";
 import CardOverflow from "@mui/joy/CardOverflow";
 import AspectRatio from "@mui/joy/AspectRatio";
-import { useSelector } from "react-redux";
-import { createSelector } from "reselect";
 import { retrieveTopUsers } from "./selector";
+import { createSelector } from "@reduxjs/toolkit";
+import { useSelector } from "react-redux";
 import { serverApi } from "../../../lib/config";
-import { Member } from "../../../lib/types/member";
 
 /** REDUX SLICE & SELECTOR **/
+
 const topUsersRetriever = createSelector(retrieveTopUsers, (topUsers) => ({
   topUsers,
 }));
 
 export default function ActiveUsers() {
   const { topUsers } = useSelector(topUsersRetriever);
+
   return (
-    <div className={"active-users-frame"}>
+    <div className="active-users-frame">
       <Container>
         <Stack className={"main"}>
           <Box className={"category-title"}>Active Users</Box>
           <Stack className={"cards-frame"}>
             <CssVarsProvider>
               {topUsers.length !== 0 ? (
-                topUsers.map((member: Member) => {
+                topUsers.map((member) => {
                   const imagePath = `${serverApi}/${member.memberImage}`;
                   return (
                     <Card

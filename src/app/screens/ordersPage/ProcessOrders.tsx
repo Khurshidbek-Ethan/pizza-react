@@ -4,7 +4,7 @@ import Button from "@mui/material/Button";
 import TabPanel from "@mui/lab/TabPanel";
 import moment from "moment";
 
-export default function ProcessOrders() {
+export default function ProcessOrder() {
   return (
     <TabPanel value={"2"}>
       <Stack>
@@ -18,30 +18,35 @@ export default function ProcessOrders() {
                       <img
                         src={"/img/kebab.webp"}
                         className={"order-dish-img"}
+                        alt=""
                       />
                       <p className={"title-dish"}>Kebab</p>
                       <Box className={"price-box"}>
                         <p>$11</p>
-                        <img src={"/icons/close.svg"} />
+                        <img src={"/icons/close.svg"} alt="" />
                         <p>2</p>
-                        <img src={"/icons/pause.svg"} />
+                        <img src={"/icons/pause.svg"} alt="" />
                         <p style={{ marginLeft: "15px" }}>$22</p>
                       </Box>
                     </Box>
                   );
                 })}
               </Box>
-
               <Box className={"total-price-box"}>
                 <Box className={"box-total"}>
                   <p>Product price</p>
                   <p>$22</p>
-                  <img src={"/icons/plus.svg"} style={{ marginLeft: "20px" }} />
+                  <img
+                    src={"/icons/plus.svg"}
+                    style={{ marginLeft: "20px" }}
+                    alt=""
+                  />
                   <p>delivery cost</p>
                   <p>$2</p>
                   <img
                     src={"/icons/pause.svg"}
                     style={{ marginLeft: "20px" }}
+                    alt=""
                   />
                   <p>Total</p>
                   <p>$24</p>
@@ -56,12 +61,12 @@ export default function ProcessOrders() {
             </Box>
           );
         })}
-
         {false && (
           <Box display={"flex"} flexDirection={"row"} justifyContent={"center"}>
             <img
               src={"/icons/noimage-list.svg"}
               style={{ width: 300, height: 300 }}
+              alt=""
             />
           </Box>
         )}

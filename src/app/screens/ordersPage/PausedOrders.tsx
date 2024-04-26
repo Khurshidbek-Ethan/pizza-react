@@ -15,16 +15,17 @@ export default function PausedOrders() {
                   return (
                     <Box key={index2} className={"orders-name-price"}>
                       <img
-                        src={"/img/lavash.webp"}
+                        src={"/img/kebab.webp"}
                         className={"order-dish-img"}
+                        alt=""
                       />
-                      <p className={"title-dish"}>Lavash</p>
+                      <p className={"title-dish"}>Kebab</p>
                       <Box className={"price-box"}>
-                        <p>$9</p>
-                        <img src={"/icons/close.svg"} />
+                        <p>$11</p>
+                        <img src={"/icons/close.svg"} alt="" />
                         <p>2</p>
-                        <img src={"/icons/pause.svg"} />
-                        <p style={{ marginLeft: "15px" }}>$24</p>
+                        <img src={"/icons/pause.svg"} alt="" />
+                        <p style={{ marginLeft: "15px" }}>$22</p>
                       </Box>
                     </Box>
                   );
@@ -33,15 +34,16 @@ export default function PausedOrders() {
 
               <Box className={"total-price-box"}>
                 <Box className={"box-total"}>
-                  <p>Product price</p>
+                  <p>Product Price</p>
                   <p>$18</p>
-                  <img src={"/icons/plus.svg"} style={{ marginLeft: "20px" }} />
+                  <img
+                    src={"/icons/plus.svg"}
+                    style={{ marginLeft: "20px" }}
+                    alt=""
+                  />
                   <p>Delivery cost</p>
                   <p>$2</p>
-                  <img
-                    src={"/icons/pause.svg"}
-                    style={{ marginLeft: "20px" }}
-                  />
+                  <img src={"/icons/pause.svg"} alt="" />
                   <p>Total</p>
                   <p>$20</p>
                 </Box>
@@ -59,12 +61,12 @@ export default function PausedOrders() {
             </Box>
           );
         })}
-
         {false && (
           <Box display={"flex"} flexDirection={"row"} justifyContent={"center"}>
             <img
               src={"/icons/noimage-list.svg"}
               style={{ width: 300, height: 300 }}
+              alt=""
             />
           </Box>
         )}
