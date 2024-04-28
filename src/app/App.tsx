@@ -9,44 +9,25 @@ import HomeNavbar from "./components/headers/HomeNavbar";
 import OtherNavbar from "./components/headers/OtherNavbar";
 import Footer from "./components/footer";
 import HelpPage from "./screens/helpPage";
-//import Test from "./screens/Test";
-
-// css imports
-import "../css/app.css";
-import "../css/navbar.css";
-import "../css/footer.css";
 import { CartItem } from "../lib/types/search";
 import useBasket from "./hooks/useBasket";
 import { imageListClasses } from "@mui/material";
+import AuthenticationModal from "./components/auth";
+//import Test from "./screens/Test";
+import "../css/app.css";
+import "../css/navbar.css";
+import "../css/footer.css";
 
 function App() {
   const location = useLocation();
   console.log("location:", location);
   const { cartItems, onAdd, onRemove, onDelete, onDeleteAll } = useBasket();
-
-  // const cartJson: string | null = localStorage.getItem("cartData");
-  // const currentCart = cartJson ? JSON.parse(cartJson) : [];
-  // const [cartItems, setCartItems] = useState<CartItem[]>(currentCart);
+  const [signupOpen, setSignupOpen] = useState<boolean>(false);
+  const [loginOpen, setLoginOpen] = useState<boolean>(false);
 
   /** HANDLERS **/
-  // const onAdd = (input: CartItem) => {
-  //   const exist: any = cartItems.find(
-  //     (item: CartItem) => item._id === input._id
-  //   );
-  //   if (exist) {
-  //     const cartUpdate = cartItems.map((item: CartItem) =>
-  //       item._id === input._id
-  //         ? { ...exist, quantity: exist.quantity + 1 }
-  //         : item
-  //     );
-  //     setCartItems(cartUpdate);
-  //     localStorage.setItem("cartData", JSON.stringify(cartUpdate));
-  //   } else {
-  //     const cartUpdate = [...cartItems, { ...input }];
-  //     setCartItems(cartUpdate);
-  //     localStorage.setItem("cartData", JSON.stringify(cartUpdate));
-  //   }
-  // };
+  const handleSignupClose = () => setSignupOpen(false);
+  const handleLoginClose = () => setLoginOpen(false);
 
   return (
     <>
@@ -86,6 +67,13 @@ function App() {
         </Route>
       </Switch>
       <Footer />
+
+      <AuthenticationModal
+        signupOpen={signupOpen}
+        loginOpen={loginOpen}
+        handleLoginClose={handleLoginClose}
+        handleSignupClose={handleSignupClose}
+      />
     </>
   );
 }
