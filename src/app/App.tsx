@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-
 import { Route, Switch, useLocation } from "react-router-dom";
 import ProductsPage from "./screens/productsPage";
 import OrdersPage from "./screens/ordersPage";
@@ -9,20 +8,15 @@ import HomeNavbar from "./components/headers/HomeNavbar";
 import OtherNavbar from "./components/headers/OtherNavbar";
 import Footer from "./components/footer";
 import HelpPage from "./screens/helpPage";
-import { CartItem } from "../lib/types/search";
 import useBasket from "./hooks/useBasket";
-import { imageListClasses } from "@mui/material";
 import AuthenticationModal from "./components/auth";
-//import Test from "./screens/Test";
-import "../css/app.css";
-import "../css/navbar.css";
-import "../css/footer.css";
-import { T } from "../lib/types/common";
 import { sweetErrorHandling, sweetTopSuccessAlert } from "../lib/sweetAlert";
 import { Messages } from "../lib/config";
 import MemberService from "./services/MemberService";
 import { useGlobals } from "./hooks/useGlobals";
-
+import "../css/app.css";
+import "../css/navbar.css";
+import "../css/footer.css";
 function App() {
   const location = useLocation();
   const { setAuthMember } = useGlobals();
