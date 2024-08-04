@@ -38,7 +38,7 @@ export default function Products(props: ProductsProps) {
   const { products } = useSelector(productsRetriever);
   const [productSearch, setProductSearch] = useState<ProductInquiry>({
     page: 1,
-    limit: 8,
+    limit: 4,
     order: "createdAt",
     productCollection: ProductCollection.DISH,
     search: "",

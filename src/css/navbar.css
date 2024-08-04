@@ -1,22 +1,20 @@
-
 .home-navbar {
-
-  width:100%;
+  width: 100%;
   height: 773px;
-   display: flex;
-    background-image: url("/public/img/360.jpg");
+  display: flex;
+  background-image: url("/public/img/360.jpg");
   background-size: cover;
-
+  background-repeat: no-repeat;
 }
 
 .home-navbar .navbar-container {
-     margin-top: 55px;
-
+  margin-top: 55px;
+  height: 642px;
 }
 
 .home-navbar .navbar-container .menu {
-    /* margin-left: -250px; */
-   height: 50px;
+  /* margin-left: -250px; */
+  height: 50px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -30,27 +28,32 @@
 }
 
 .home-navbar .navbar-container .menu .brand-logo {
-   width: 350px;
-   margin-left: -450px;
-  /* height: 100px; */
+  width: 350px;
+  margin-left: -450px;
+  height: 100px;
+  /* height: 30px; */
 
 }
 
 .home-navbar .navbar-container .menu .links {
-   min-width: 1260px;
-    font-size: 38px;
-    font-family:Georgia-serif;
-    display: flex;
+    min-width: 1260px;
+  font-size: 38px;
+  font-family: Georgia-serif;
+  display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: normal;
+  /* min-width: 700px;
+  font-size: 38px;
+  font-family: Georgia-serif;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: normal; */
 }
 
 .home-navbar .navbar-container .menu .links .login-button {
-    width: 100px;
-  height: 50px;
-  font-size: 20px;
-  background:  #e17725;
+ background: #525355;
   color: #f8f8ff;
 }
 
@@ -76,7 +79,7 @@
 }
 
 .home-navbar .hover-line:after {
-  display: block;
+ display: block;
   content: "";
   border-bottom: solid 2px #d7b686;
   transform: scaleX(0);
@@ -94,7 +97,7 @@
 /* header frame css part  */
 
 .home-navbar .navbar-container .header-frame .detail {
-  width: 910px;
+  width: px;
   display: flex;
   flex-direction: column;
 }
@@ -104,11 +107,25 @@
 }
 
 .home-navbar .navbar-container .detail .signup .signup-button {
-  width: 250px;
+   width: 210px;
+  height: 60px;
+  border-radius: 4px;
+  background: #606162;
+
+  text-align: center;
+  font-family: Poppins;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  color: #f8f8ff;
+  margin-top: 500px;
+
+  /* width: 250px;
   height: 60px;
   border-radius: 4px;
   background: #d26919;
-  margin-top: 520px;
+  margin-top: 220px;
   margin-left: -350px;
   text-align: center;
   font-family: Poppins;
@@ -116,7 +133,7 @@
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-  color: #f8f8ff;
+  color: #f8f8ff; */
 }
 
 /* logo-frame css part  */
@@ -130,10 +147,10 @@
 /* other navbar*/
 
 .other-navbar {
- width:100%;
+  width: 100%;
   height: 773px;
-   display: flex;
-    background-image: url("/public/img/360.jpg");
+  display: flex;
+  background-image: url("/public/img/360.jpg");
   background-size: cover;
 }
 
@@ -151,21 +168,21 @@
 
 .other-navbar .navbar-container .menu .brand-logo {
   width: 350px;
-   margin-left: -450px;
+  margin-left: -450px;
 }
 
 .other-navbar .navbar-container .menu .links {
   min-width: 1260px;
-    font-size: 38px;
-    font-family:Georgia-serif;
-    display: flex;
+  font-size: 38px;
+  font-family: Georgia-serif;
+  display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: normal;
 }
 
 .other-navbar .navbar-container .menu .links .login-button {
-  background:  #d6884b;
+  background: #d6884b;
   color: #f8f8ff;
 }
 
