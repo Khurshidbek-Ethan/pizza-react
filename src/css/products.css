@@ -29,34 +29,36 @@
   position: relative;
   width: 100%;
   height: 43px;
+  font-size: 60px;
   margin-top: 80px;
   display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
+  flex-direction: column;
+  align-items: left;
+  justify-content: space-around;
 }
 
 .products-page .products .top-text p {
   position: relative;
   margin-left: 380px;
+  margin-top: 3px;
   font-family: "Dancing Script";
   font-style: normal;
   font-weight: 700;
-  font-size: 36px;
+  font-size: 60px;
   line-height: 43px;
   color: #343434;
 }
 
 .products-page .products .single-search-big-box {
   position: relative;
-  width: 337px;
+  width: 837px;
   height: 33px;
   display: flex;
   flex-direction: row;
   align-items: center;
-  background: #fffcfc;
+  background: #fbf9f9;
   border: 1px solid #f8f8ff;
-  box-shadow: 0px 4px 4px rgba(213, 213, 213, 0.25);
+  box-shadow: 8px 4px 4px 4px rgba(87, 37, 37, 0.25);
   border-radius: 18.5px;
   box-sizing: border-box;
 }
@@ -72,7 +74,7 @@
 
 .products-page .products .single-search-input {
   position: relative;
-  width: 225px;
+  width: 700px;
   height: 30px;
   margin-left: 5px;
   margin-right: 5px;
@@ -85,17 +87,17 @@
   font-weight: 400;
   font-size: 15px;
   line-height: 26px;
-  color: #4f547b;
+  color: #171717;
 }
 
 .products-page .products .single-button-search {
   position: relative;
-  width: 100px;
+  width: 200px;
   height: 33px;
-  color: #d7b586;
+  color: #f6f6f6;
   display: flex;
   border-radius: 18px;
-  background: #343434;
+  background: #070707;
 }
 
 .products-page .products .prev-btn,
@@ -162,7 +164,7 @@
   font-weight: 400;
   font-size: 30px;
   line-height: 34px;
-  color: #e3c08d;
+  color: #f6f3ef;
 }
 
 .products-page .products .product-card {
@@ -180,7 +182,7 @@
   width: 273px;
   height: 275px;
   background-size: cover;
-  border-radius: 0px 50px 0px 0px;
+  border-radius: 0px 50px 0px 50px;
 }
 
 .products-page .products .product-img .product-sale {
@@ -190,8 +192,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background: #ff9200;
-  box-shadow: 4px 6px 20px #0000001a;
+  background: #716f6f;
+  box-shadow: 4px 6px 20px #ca30301a;
   border-radius: 25px;
   font-family: "Poppins";
   font-style: normal;
@@ -225,7 +227,7 @@
   font-weight: 600;
   font-size: 24px;
   line-height: 36px;
-  color: #e3c08d;
+  color: #50504e;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -233,7 +235,7 @@
 }
 
 .products-page .products .product-img:before {
-  border-radius: 0px 50px 0px 0px;
+  border-radius: 0px 50px 0px 50px;
   content: "";
   opacity: 0;
   transition: opacity 0.5s ease;
@@ -242,12 +244,12 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(107, 107, 107, 0.5);
   z-index: 2;
 }
 
 .products-page .products .product-img:hover:before {
-  border-radius: 0px 50px 0px 0px;
+  border-radius: 0px 50px 0px 50px;
   opacity: 1;
 }
 
@@ -273,15 +275,15 @@
   z-index: 3;
   opacity: 0;
   transition: opacity 0.5s ease;
-  background: rgb(198 0 255 / 66%);
-  border: 2px solid #d7b686;
+  background: rgba(255, 255, 255, 0.982);
+  border: 2px solid #090909;
   border-radius: 10px;
   font-family: "Poppins";
   font-style: normal;
   font-weight: 600;
   font-size: 10px;
   line-height: 15px;
-  color: #f8f8ff;
+  color: #f9f9f9;
 }
 
 .products-page .products .product-img:hover .shop-btn {
@@ -343,23 +345,30 @@
 
 .products-page .products .brands-logo .category-title {
   font-family: "Dancing Script";
+
   font-style: normal;
   font-weight: 700;
-  font-size: 36px;
+  font-size: 60px;
   line-height: 43px;
-  color: #d7b686;
+  color: #fbf9f7;
 }
 
 .products-page .products .brands-logo .review-box {
   margin-top: 40px;
   padding: 20px;
-  width: 260px;
+  width: 270px;
   height: 350px;
   display: flex;
   object-fit: fill;
   box-shadow: 0px -1px 13px 5px #c8b3b340;
   border-radius: 20px;
 }
+
+.products-page .products .brands-logo .review-box .best-seller{
+  border-radius: 20px;
+  width: 600px;
+}
+
 
 .products-page .products .brands-logo .review-img {
   width: 110px;
@@ -527,17 +536,23 @@
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
+  
+  height: 70px;
+
 }
 
 .products-page .products .dishes-filter-box {
-  height: auto;
+  height: 70px;
+  width: auto;
+  
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
 
 .products-page .products .dishes-filter-box .order {
-  margin-right: 20px;
+  margin-right: 30px;
+  /* width: 30px; */
 }
 
 .products-page .products .list-category-section {
@@ -548,7 +563,7 @@
 }
 
 .products-page .products .product-category {
-  margin-top: 60px;
+  /* margin-top: 60px; */
   width: 50px;
   height: auto;
   display: flex;
@@ -559,16 +574,18 @@
   display: flex;
   flex-direction: row;
   justify-content: end;
-  transform: rotate(-90deg); /* Standard CSS property */
+   transform: rotate(-90deg); /* Standard CSS property */
   -moz-transform: rotate(-90deg); /* Firefox */
   -ms-transform: rotate(-90deg); /* Edge */
   -o-transform: rotate(-90deg); /* Opera */
-  -webkit-transform: rotate(-90deg);
+  -webkit-transform: rotate(-90deg); 
 }
 
 .products-page .product-category .category-main button {
-  min-width: auto;
-  margin-right: 10px;
+  min-width: 120px;
+  margin-right: 18px;
+  margin-bottom: 20px;
+
 }
 
 .products-page .products .css-1p7b7rs-MuiBadge-badge {
@@ -583,7 +600,7 @@
   position: relative;
   width: 100%;
   height: auto;
-  background: #f8f8ff;
+  background: #e7e7f4;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -628,7 +645,7 @@
   width: 49%;
   height: 480px;
   display: flex;
-  background: #ffffff;
+  background: #dfdfdf;
   box-shadow: 9px 13px 14px 5px rgba(0, 0, 0, 0.25),
     inset -1px 2px 10px 3px rgba(0, 0, 0, 0.25);
   border-radius: 16px;
@@ -647,7 +664,7 @@
   font-weight: 600;
   font-size: 30px;
   line-height: 36px;
-  color: #000000;
+  color: #0d0d0d;
 }
 
 .products-page .chosen-product .info-box .resto-name {
@@ -657,7 +674,7 @@
   font-weight: 600;
   font-size: 17px;
   line-height: 15px;
-  color: #979797;
+  color: #666464;
 }
 
 .products-page .chosen-product .info-box .rating-box {

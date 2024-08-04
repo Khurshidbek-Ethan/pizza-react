@@ -11,16 +11,16 @@ const light = {
   palette: {
     type: "light",
     background: {
-      default: "#f8f8ff",
+      default: "#ffffff",
       paper: common.white,
     },
     primary: {
-      contrastText: "#d7b586",
-      main: "#343434",
+      contrastText: "#ffffff",
+      main: "#080808",
     },
     secondary: {
-      contrastText: "#343434",
-      main: "#d7b586",
+      contrastText: "#ffffff",
+      main: "#a8a4a4",
     },
     text: {
       primary: "#343434",

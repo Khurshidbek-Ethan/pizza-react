@@ -48,7 +48,7 @@ export default function HomePage() {
     product
       .getProducts({
         page: 1,
-        limit: 4,
+        limit: 5,
         order: "createdAt",
         productCollection: ProductCollection.DISH,
       })
@@ -65,10 +65,10 @@ export default function HomePage() {
   return (
     <div className={"homepage"}>
       <Statistics />
-      <PopularDishes />
       <NewDishes />
-      <Advertisement />
+      <PopularDishes />
       <ActiveUsers />
+      <Advertisement />
       <Events />
     </div>
   );

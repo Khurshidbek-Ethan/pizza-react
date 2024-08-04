@@ -29,7 +29,7 @@ export default function PopularDishes() {
     <div className="popular-dishes-frame">
       <Container>
         <Stack className="popular-section">
-          <Box className="category-title">Popular Dishes</Box>
+          <Box className="category-title">Popular Pizza</Box>
           <Stack className="cards-frame">
             {popularDishes.length !== 0 ? (
               popularDishes.map((product: Product) => {
@@ -44,7 +44,7 @@ export default function PopularDishes() {
                       <CardContent sx={{ justifyContent: "flex-end" }}>
                         <Stack
                           flexDirection={"row"}
-                          justifyContent={"space-between"}
+                          justifyContent={"space-around"}
                         >
                           <Typography
                             level="h2"
@@ -56,6 +56,7 @@ export default function PopularDishes() {
                           </Typography>
                           <Typography
                             sx={{
+
                               fontWeight: "md",
                               color: "neutral.300",
                               alignItems: "center",
@@ -64,7 +65,7 @@ export default function PopularDishes() {
                           >
                             {product.productViews}
                             <VisibilityIcon
-                              sx={{ fontSize: 25, marginLeft: "5px" }}
+                              sx={{ fontSize: 25, marginLeft: "50px" }}
                             />
                           </Typography>
                         </Stack>
@@ -75,13 +76,13 @@ export default function PopularDishes() {
                           gap: 1.5,
                           py: 1.5,
                           px: "var(--Card-padding)",
-                          borderTop: "1px solid",
-                          height: "60px",
+                          borderTop: "5px solid",
+                          height: "100px",
                         }}
                       >
                         <Typography
                           startDecorator={<DescriptionOutlinedIcon />}
-                          textColor="neutral.300"
+                          textColor="neutral.200"
                         >
                           {product.productDesc}
                         </Typography>

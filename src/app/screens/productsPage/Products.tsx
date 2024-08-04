@@ -98,7 +98,7 @@ export default function Products(props: ProductsProps) {
         <Stack flexDirection={"column"} alignItems={"center"}>
           <Stack className={"avatar-big-box"}>
             <Stack className={"top-text"}>
-              <p>Burak Restaurant</p>
+              <p>Pizza Restaurant</p>
 
               <Stack className={"single-search-big-box"}>
                 <input
@@ -237,11 +237,10 @@ export default function Products(props: ProductsProps) {
                     searchCollectionHandler(ProductCollection.DISH)
                   }
                 >
-                  Dish
+                  PIZZA
                 </Button>
               </div>
             </Stack>
-
             <Stack className={"product-wrapper"}>
               {products.length !== 0 ? (
                 products.map((product: Product) => {
@@ -276,6 +275,7 @@ export default function Products(props: ProductsProps) {
                           }}
                         >
                           <img
+                            className="shopping"
                             src={"/icons/shopping-cart.svg"}
                             style={{ display: "flex" }}
                             alt=""
@@ -341,22 +341,22 @@ export default function Products(props: ProductsProps) {
 
       <div className={"brands-logo"}>
         <Container className={"family-brands"}>
-          <Box className={"category-title"}>Our Family Brands</Box>
+          <Box className={"category-title"}>Best Selling Pizzas</Box>
           <Stack className={"brand-list"}>
             <Box className={"review-box"}>
-              <img src={"/img/gurme.webp"} alt="" />
+              <img className="best-seller" src={"/img/best1.jpg"} alt="" />
             </Box>
 
             <Box className={"review-box"}>
-              <img src={"/img/sweets.webp"} alt="" />
+              <img className="best-seller" src={"/img/best2.jpg"} alt="" />
             </Box>
 
             <Box className={"review-box"}>
-              <img src={"/img/seafood.webp"} alt="" />
+              <img className="best-seller" src={"/img/best3.jpg"} alt="" />
             </Box>
 
             <Box className={"review-box"}>
-              <img src={"/img/doner.webp"} alt="" />
+              <img className="best-seller" src={"/img/best4.jpg"} alt="" />
             </Box>
           </Stack>
         </Container>
